@@ -26,6 +26,8 @@ nav div {
 }
 
 nav div:first-child {
+    width: 30%;
+    
     border-left: 0;
     border-top-left-radius: 5px;
 }
@@ -42,6 +44,10 @@ main {
     
 }
 
+#gameCanvas {
+    width: 100%;
+}
+
 footer {
     margin-top: 50%;
     margin-bottom: 5%;
@@ -52,5 +58,7 @@ footer {
 /* dator */
 
 @media screen and (min-width: 600px) {
-    
+    #gameCanvas {
+        
+    }
 }
