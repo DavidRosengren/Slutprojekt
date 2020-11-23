@@ -4,60 +4,66 @@
     
 }
 
-nav {
-    border-bottom: 2px solid black;
-    
-    height: 50px;
-    
-    display: flex;
-}
+/* kan spelet optimeras för liggandes/stående? */
 
-nav div {
-    border-left: 2px solid black;
-    
-    width: 100%;
-    line-height: 50px;
-    
-    background-color: #1e90ff;
-    color: white;
-    
-    text-align: center;
-    font-family: 'Turret Road', cursive;
-}
+/* mobil liggandes */
 
-nav div:first-child {
-    width: 30%;
-    
-    border-left: 0;
-    border-top-left-radius: 5px;
-}
 
-nav div:last-child {
-    border-top-right-radius: 5px;
-}
 
-#contact {
-    width: 25%;
-}
+/* mobil stående */
 
-main {
-    
-}
+@media screen and (min-width: 600px) {
+    nav {
+        border-bottom: 2px solid black;
 
-#gameCanvas {
-    width: 100%;
-}
+        height: 50px;
 
-footer {
-    margin-top: 50%;
-    margin-bottom: 5%;
-    
-    border-top: 1px solid black;
+        display: flex;
+    }
+
+    nav div {
+        border-left: 2px solid black;
+
+        width: 100%;
+        line-height: 50px;
+
+        background-color: #1e90ff;
+        color: white;
+
+        text-align: center;
+        font-family: 'Turret Road', cursive;
+        font-size: 16px;
+    }
+
+    nav div:first-child {
+        width: 200px;
+
+        border-left: 0;
+        border-top-left-radius: 5px;
+    }
+
+    nav div:last-child {
+        border-top-right-radius: 5px;
+    }
+
+    #contact {
+        width: 25%;
+        min-width: 70px;
+    }
+
+    main {
+
+    }
+
+    #gameCanvas {
+        width: 100%;
+    }
+
 }
 
 /* dator */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (min-height: 600px) {
     #gameCanvas {
         
     }
